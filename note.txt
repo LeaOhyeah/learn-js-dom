@@ -1,0 +1,150 @@
+=== Pendahuluan 3h ===
+
+
+
+=== Pengenalan DOM ===
+Ketika sebuah website di load oleh Browser, maka Browser akan membuat Document Object Model untuk halaman website tersebut
+DOM dibuat dalam bentuk tree / pohon yang tiap cabang nya berisikan object dari jenis elemen HTML
+JavaScript memiliki kemampuan untuk memanipulasi DOM, artinya dengan JavaScript, kita bisa mengakses tiap object di DOM bahkan memanipulasi object nya
+
+DOM bukanlah fitur atau bahasa pemrograman, DOM sebenarnya hanyalah representasi Object dari Struktur halaman web
+DOM sendiri sebenarnya bukanlah bagian dari bahasa pemrograman JavaScript, melainkan bagian dari Web API
+DOM sendiri di desain secara agnostik, artinya sebenarnya bisa digunakan menggunakan bahasa pemrograman apapun, 
+karena memang untuk membuat Web, kita tidak hanya bisa menggunakan bahasa pemrograman JavaScript
+
+
+=== Memebuat Project ===
+
+
+
+=== Tipe Data ===
+DOM memiliki representasi data
+Tidak terlalu banyak tipe data yang terdapat di DOM
+Oleh karena itu, sebenarnya DOM sangat sederhana, namun penggunaannya sangat bermanfaat
+
+Document        Merupakan representasi dari halaman web // satu halaman / tab
+Node            Merupakan base class untuk semua tipe data di DOM, seperti Document, Element, dan Attr // parent class semua data
+Element         Merupakan representasi object element di halaman web, misal head, body, form, input, dan lain-lain // tag
+NodeList        Merupakan array/collection yang berisikan Node // kumpulan node (apapun, entah doc, elemen dll)
+Attr            Atau attribute, merupakan representasi object attribute dalam element // href=value
+NamedNodeMap    Merupakan collection yang berisikan Attr dalam bentuk Map // kumpulan attr
+
+
+=== Document ===
+Document merupakan representasi object dari halaman web
+Dalam satu halaman web, terdapat satu document, dan kita tidak perlu membuatnya secara manual, karena otomatis akan ada di browser
+Untuk mengakses Document, kita bisa gunakan object document
+https://developer.mozilla.org/en-US/docs/Web/API/Document 
+
+
+Document secara otomatis dibuat dalam browser ketika membuka halaman web, sehingga kita tidak perlu membuat objek Document secara manual
+Kita bisa langsung menggunakan kata kunci document
+
+Document memiliki banyak sekali property
+Property dalam Document bisa kita gunakan untuk melihat semua data yang terdapat dalam document halaman web
+https://developer.mozilla.org/en-US/docs/Web/API/Document#properties 
+
+Document memiliki banyak sekali method
+Banyak method yang terdapat di document digunakan untuk memanipulasi data DOM, misal membuat Node, Element, Attribute atau mengambil dan menyeleksi Node di dalam document
+https://developer.mozilla.org/en-US/docs/Web/API/Document#methods 
+
+
+=== Node ===
+Node adalah base class dari Document, Element dan Attr
+Artinya semua fitur yang dimiliki di Node dimiliki diturunannya
+Node dalam DOM itu bentuknya adalah Tree (pohon), artinya dengan Node, kita bisa melihat Parent (node diatas nya), 
+Children (node dibawahnya), Sibling (node disebelahnya)
+https://developer.mozilla.org/en-US/docs/Web/API/Node 
+
+Node memiliki banyak sekali property
+Property di Node banyak berisi informasi reference ke Node lain nya, seperti ke node parent nya, node children nya atau node sebelahnya
+https://developer.mozilla.org/en-US/docs/Web/API/Node#properties 
+
+Node memiliki banyak sekali method
+Method di Node bisa digunakan untuk memanipulasi data Node di dalam Node tersebut, misal menambah/menghapus Node children
+https://developer.mozilla.org/en-US/docs/Web/API/Node#properties 
+
+
+=== Element ===
+Element merupakan Node yang berbentuk element, biasanya adalah element HTML, 
+misal <html>, <head>, <body>, <div>, <table>, dan lain-lain
+https://developer.mozilla.org/en-US/docs/Web/API/Element 
+
+Element memiliki banyak sekali property
+Dan karena Element adalah turunan dari Node, semua property Node pun bisa digunakan di Element
+https://developer.mozilla.org/en-US/docs/Web/API/Element#properties 
+
+Element memiliki banyak sekali method
+Dan karena Element adalah turunan dari Node, semua method Node pun bisa digunakan di Element
+https://developer.mozilla.org/en-US/docs/Web/API/Element#methods 
+
+Sebelumnya kita hanya mengambil element menggunakan id, artinya kita perlu buat dulu element nya di HTML
+Kita juga bisa membuat object element baru, dan menambahkannya ke halaman web
+Kita bisa menggunakan method createElement(tag) pada Document
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement 
+
+
+=== NodeList ===
+
+
+
+=== Attr ===
+
+
+
+=== NamedNodeMap ===
+
+
+
+=== Text Node ===
+
+
+
+=== Event Handler ===
+
+
+
+=== Event ===
+
+
+
+=== Style ===
+
+
+
+=== Inner Text dan Inner HTML ===
+
+
+
+=== Window ===
+
+
+
+=== Query Selector ===
+
+
+
+=== Node Type ===
+
+
+
+=== HTML Element ===
+
+
+
+=== HTML Form Element ===
+
+
+
+=== HTML Table Element ===
+
+
+
+=== HTML Element Lainnya ===
+
+
+
+=== Materi Selanjutnya ===
+
+
+

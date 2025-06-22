@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Inner Text</title>
+</head>
+<body>
+<p id="content">
+    <script>
+        console.info("Hello World");
+    </script>
+    <b>Lea</b> Alyu <i>Maulana</i>
+</p>
+
+<script>
+    const content = document.getElementById("content");
+
+    // semua inner teks
+    console.info(content.textContent);
+
+    // inner yang di rendder
+    console.info(content.innerText);
+
+    // seluruh html nya, inner dan html, akan di rendder sebagai html
+    console.info(content.innerHTML);
+    content.innerHTML = "<b> HTML dari inner HTML </b>"
+</script>
+
+</body>
+</html>

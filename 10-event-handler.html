@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+  </head>
+  <body>
+    <input type="button" id="clickMe" value="Click Me" />
+  </body>
+  <script>
+    const clickMe = document.getElementById("clickMe");
+
+    // event traget listener bisa lebih dari satu callback
+    clickMe.addEventListener("click", function () {
+      alert("hello 1");
+    });
+
+    clickMe.addEventListener("click", function () {
+      alert("hello 2");
+    });
+
+    // event global hanya sekali
+    clickMe.onclick = function () {
+      alert("hello tidak muncul");
+    };
+
+    clickMe.onclick = function () {
+      alert("hello muncul");
+    };
+  </script>
+</html>
